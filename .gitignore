@@ -1,6 +1,7 @@
 # cmake stuff
 CMakeLists.txt.user
 cmake.check_cache
+CMakeUserPresets.json
 # any folder in the project root containing "build"
 /*build*/
 *compile_commands.json
@@ -28,3 +29,5 @@ venv/
 *.csv
 *.out
 *.log
+
+src/autopas/Version.h
