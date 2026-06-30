@@ -3,16 +3,9 @@
     "configurePresets": [
         {
             "name": "release",
-            "displayName": "Visual Studio Build Tools 2022 Release - x86_amd64",
-            "description": "Using compilers for Visual Studio 17 2022 (x86_x64 architecture)",
-            "generator": "Visual Studio 17 2022",
-            "toolset": "host=x86",
-            "architecture": "x64",
             "binaryDir": "${sourceDir}/build/${presetName}",
             "cacheVariables": {
                 "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
-                "CMAKE_C_COMPILER": "/usr/bin/clang",
-                "CMAKE_CXX_COMPILER": "/usr/bin/clang++",
                 "CMAKE_BUILD_TYPE": "Debug",
                 "AUTOPAS_BUILD_TARGET_DOC": "OFF"
             }

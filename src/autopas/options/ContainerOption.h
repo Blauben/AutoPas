@@ -68,6 +68,10 @@ class ContainerOption : public Option<ContainerOption> {
      * distributed since it is space adaptive
      */
     octree,
+    /**
+     * KDTree : Particles are put into a k-d tree. This data structure is optimized for optimal space workload distribution.
+     */
+    kdtree
   };
 
   /**
@@ -110,6 +114,7 @@ class ContainerOption : public Option<ContainerOption> {
         {ContainerOption::varVerletListsAsBuild, "VarVerletListsAsBuild"},
         {ContainerOption::pairwiseVerletLists, "PairwiseVerletLists"},
         {ContainerOption::octree, "Octree"},
+        {ContainerOption::kdtree, "KDTree"}
     };
   };
 
